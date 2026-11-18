@@ -1,0 +1,745 @@
+{
+  "annotrust": "0.1.0",
+  "python": "3.12.3",
+  "numpy": "2.5.5",
+  "pandas": "3.1.1",
+  "scipy": "1.18.1",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "reference": {
+    "pooled": {
+      "careless": {
+        "tp": 10,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "colluding": {
+        "tp": 10,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "poisoning": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "per_seed": [
+      {
+        "seed": 0,
+        "careless": 1.0,
+        "colluding": 1.0,
+        "poisoning": 1.0
+      },
+      {
+        "seed": 1,
+        "careless": 1.0,
+        "colluding": 1.0,
+        "poisoning": 1.0
+      },
+      {
+        "seed": 2,
+        "careless": 1.0,
+        "colluding": 1.0,
+        "poisoning": 1.0
+      },
+      {
+        "seed": 3,
+        "careless": 1.0,
+        "colluding": 1.0,
+        "poisoning": 1.0
+      },
+      {
+        "seed": 4,
+        "careless": 1.0,
+        "colluding": 1.0,
+        "poisoning": 1.0
+      }
+    ]
+  },
+  "poison_sweep": [
+    {
+      "poison_rate": 0.15,
+      "pooled": {
+        "careless": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "colluding": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "poisoning": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 5,
+          "precision": null,
+          "recall": 0.0
+        }
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 0.0
+        },
+        {
+          "seed": 1,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 0.0
+        },
+        {
+          "seed": 2,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 0.0
+        },
+        {
+          "seed": 3,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 0.0
+        },
+        {
+          "seed": 4,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 0.0
+        }
+      ]
+    },
+    {
+      "poison_rate": 0.35,
+      "pooled": {
+        "careless": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "colluding": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "poisoning": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.6
+        }
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 1,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 2,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 0.0
+        },
+        {
+          "seed": 3,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 4,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 0.0
+        }
+      ]
+    },
+    {
+      "poison_rate": 0.55,
+      "pooled": {
+        "careless": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "colluding": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "poisoning": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 1,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 2,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 3,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 4,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        }
+      ]
+    },
+    {
+      "poison_rate": 0.9,
+      "pooled": {
+        "careless": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "colluding": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "poisoning": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 1,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 2,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 3,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 4,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        }
+      ]
+    }
+  ],
+  "collude_sweep": [
+    {
+      "collude_rate": 0.25,
+      "pooled": {
+        "careless": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "colluding": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 10,
+          "precision": null,
+          "recall": 0.0
+        },
+        "poisoning": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "careless": 1.0,
+          "colluding": 0.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 1,
+          "careless": 1.0,
+          "colluding": 0.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 2,
+          "careless": 1.0,
+          "colluding": 0.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 3,
+          "careless": 1.0,
+          "colluding": 0.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 4,
+          "careless": 1.0,
+          "colluding": 0.0,
+          "poisoning": 1.0
+        }
+      ]
+    },
+    {
+      "collude_rate": 0.5,
+      "pooled": {
+        "careless": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "colluding": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 10,
+          "precision": null,
+          "recall": 0.0
+        },
+        "poisoning": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "careless": 1.0,
+          "colluding": 0.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 1,
+          "careless": 1.0,
+          "colluding": 0.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 2,
+          "careless": 1.0,
+          "colluding": 0.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 3,
+          "careless": 1.0,
+          "colluding": 0.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 4,
+          "careless": 1.0,
+          "colluding": 0.0,
+          "poisoning": 1.0
+        }
+      ]
+    },
+    {
+      "collude_rate": 0.7,
+      "pooled": {
+        "careless": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "colluding": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.8
+        },
+        "poisoning": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 1,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 2,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 3,
+          "careless": 1.0,
+          "colluding": 0.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 4,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        }
+      ]
+    },
+    {
+      "collude_rate": 0.95,
+      "pooled": {
+        "careless": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "colluding": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "poisoning": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 1,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 2,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 3,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        },
+        {
+          "seed": 4,
+          "careless": 1.0,
+          "colluding": 1.0,
+          "poisoning": 1.0
+        }
+      ]
+    }
+  ],
+  "honest_copy": {
+    "pooled": {
+      "careless": {
+        "tp": 10,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "colluding": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 10,
+        "precision": null,
+        "recall": 0.0
+      },
+      "poisoning": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "per_seed": [
+      {
+        "seed": 0,
+        "careless": 1.0,
+        "colluding": 0.0,
+        "poisoning": 1.0
+      },
+      {
+        "seed": 1,
+        "careless": 1.0,
+        "colluding": 0.0,
+        "poisoning": 1.0
+      },
+      {
+        "seed": 2,
+        "careless": 1.0,
+        "colluding": 0.0,
+        "poisoning": 1.0
+      },
+      {
+        "seed": 3,
+        "careless": 1.0,
+        "colluding": 0.0,
+        "poisoning": 1.0
+      },
+      {
+        "seed": 4,
+        "careless": 1.0,
+        "colluding": 0.0,
+        "poisoning": 1.0
+      }
+    ]
+  },
+  "weak_flip_rates": [
+    {
+      "seed": 0,
+      "rate_to_target": 0.28560581905056787,
+      "flagged": false
+    },
+    {
+      "seed": 1,
+      "rate_to_target": 0.25246266017347835,
+      "flagged": false
+    },
+    {
+      "seed": 2,
+      "rate_to_target": 0.22704517529085913,
+      "flagged": false
+    },
+    {
+      "seed": 3,
+      "rate_to_target": 0.23161811976524213,
+      "flagged": false
+    },
+    {
+      "seed": 4,
+      "rate_to_target": 0.22478229141038614,
+      "flagged": false
+    }
+  ],
+  "majority": [
+    {
+      "seed": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tp": 0,
+      "fp": 1,
+      "fn": 5,
+      "predicted": [
+        "honest_00"
+      ],
+      "accused_honest": [
+        "honest_00"
+      ],
+      "source_prior": 0.0051238829196369115
+    },
+    {
+      "seed": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tp": 0,
+      "fp": 1,
+      "fn": 5,
+      "predicted": [
+        "honest_00"
+      ],
+      "accused_honest": [
+        "honest_00"
+      ],
+      "source_prior": 0.025710581402225693
+    },
+    {
+      "seed": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tp": 0,
+      "fp": 2,
+      "fn": 5,
+      "predicted": [
+        "honest_00",
+        "honest_01"
+      ],
+      "accused_honest": [
+        "honest_00",
+        "honest_01"
+      ],
+      "source_prior": 0.04541076245579594
+    },
+    {
+      "seed": 3,
+      "precision": 0.7142857142857143,
+      "recall": 1.0,
+      "tp": 5,
+      "fp": 2,
+      "fn": 0,
+      "predicted": [
+        "honest_00",
+        "honest_01",
+        "poisoner_00",
+        "poisoner_01",
+        "poisoner_02",
+        "poisoner_03",
+        "poisoner_04"
+      ],
+      "accused_honest": [
+        "honest_00",
+        "honest_01"
+      ],
+      "source_prior": 0.06078140752343129
+    },
+    {
+      "seed": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tp": 0,
+      "fp": 2,
+      "fn": 5,
+      "predicted": [
+        "honest_00",
+        "honest_01"
+      ],
+      "accused_honest": [
+        "honest_00",
+        "honest_01"
+      ],
+      "source_prior": 0.03460740376945893
+    }
+  ],
+  "config": {
+    "max_iter": 100,
+    "tol": 1e-05,
+    "smoothing": 0.05,
+    "min_labels": 12,
+    "min_pair_overlap": 10,
+    "collusion_min_kappa": 0.75,
+    "collusion_min_excess": 0.15,
+    "collusion_min_joint_wrong": 3,
+    "collusion_min_score": 0.25,
+    "collusion_high_score": 0.45,
+    "collusion_high_kappa": 0.85,
+    "collusion_excess_weight": 0.7,
+    "collusion_wrong_weight": 0.3,
+    "poison_min_rate": 0.4,
+    "poison_min_concentration": 0.6,
+    "poison_min_other_accuracy": 0.7,
+    "poison_min_source_count": 12.0,
+    "poison_min_flip_count": 6.0,
+    "poison_high_rate": 0.7,
+    "careless_max_accuracy": 0.55,
+    "careless_high_accuracy": 0.4,
+    "streak_min_length": 12,
+    "streak_min_fraction": 0.5,
+    "streak_max_entropy": 0.35,
+    "streak_max_accuracy": 0.85,
+    "fast_seconds": 2.0,
+    "fast_fraction": 0.5,
+    "min_timed_gaps": 8,
+    "item_entropy": 0.65,
+    "item_overturn_confidence": 0.6,
+    "model_disagree_confidence": 0.85,
+    "use_cleanlab": false
+  }
+}

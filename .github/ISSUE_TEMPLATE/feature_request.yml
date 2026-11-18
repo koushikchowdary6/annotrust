@@ -1,0 +1,19 @@
+name: Feature request
+description: A check, an input shape, or a report change
+title: "[feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What annotation file or attack is not handled.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What the command or the report should do. Threshold changes need a benchmark re-run.
+    validations:
+      required: true

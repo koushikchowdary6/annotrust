@@ -1,0 +1,106 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "annotrust"
+version = "0.1.0"
+description = "Detect suspicious annotators and poisoned labels in training data."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Sai Pranay Kowshik Chowdary Sakhamuri", email = "pranaykoushikchowdary@gmail.com" },
+]
+keywords = [
+  "annotations",
+  "data-poisoning",
+  "label-quality",
+  "dawid-skene",
+  "ai-security",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Private :: Do Not Upload",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Security",
+  "Typing :: Typed",
+]
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+cleanlab = ["cleanlab>=2.6"]
+dev = [
+  "mypy>=1.11",
+  "pytest>=8",
+  "pytest-cov>=5",
+  "ruff>=0.6",
+]
+
+[project.scripts]
+annotrust = "annotrust.cli:cli_entrypoint"
+
+[project.urls]
+Homepage = "https://github.com/koushikchowdary6/annotrust"
+Repository = "https://github.com/koushikchowdary6/annotrust"
+Issues = "https://github.com/koushikchowdary6/annotrust/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+annotrust = ["py.typed"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "W"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["annotrust"]
+
+[tool.mypy]
+python_version = "3.11"
+mypy_path = "src"
+packages = ["annotrust"]
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_unreachable = true
+strict_equality = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "--cov=annotrust --cov-report=term-missing --cov-fail-under=90"
+
+[tool.coverage.run]
+branch = true
+source = ["annotrust"]
+
+[tool.coverage.report]
+fail_under = 90
+show_missing = true
+exclude_lines = [
+  "pragma: no cover",
+  "if TYPE_CHECKING:",
+]
