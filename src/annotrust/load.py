@@ -309,6 +309,12 @@ def _model_inputs(
         current = np.asarray([numeric_columns[label][row_number] for label in classes], dtype=np.float64)
         if np.isnan(current).any():
             continue
+        if not np.isfinite(current).all() or np.any(current < 0) or float(current.sum()) <= 0:
+            warnings.append(
+                f"Ignored invalid model_prob_* vector for item {item_id}: "
+                "probabilities must be finite, non-negative, and have positive total mass."
+            )
+            continue
         if np.all(np.isnan(matrix[index])):
             matrix[index] = current
         elif not np.allclose(matrix[index], current, atol=1e-6, equal_nan=False):
